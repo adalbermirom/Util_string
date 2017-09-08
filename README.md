@@ -9,7 +9,7 @@ With some modification
 
 'strcpy' becomes 'str_cpy', for example, and so on... (This library uses underscore in function names);
 
-Reference
+# # Reference
 
 (string.h std C)
 
@@ -17,13 +17,15 @@ The functions are the same as string.h str C, just see the C std library manual.
 
 (There are some other functions that I added)
 Char
-Macros
+# Macros
 CHAR_TOLWR(c); // turn c to lower (if not possible c = c);
 CHAR_TOUPR(c); //turn c to upper (if not possible c = c);
 CHAR_ISNUMBER(n); //return 1 if n is a number '0' - '9'
 CHAR_ISALPHA(l); //return 1 if l is 'A' - 'Z' or 'a' - 'z'
 
-functions
+# functions
+
+Char
 
 int char_tolower(int);//convert to lower char if is upper
 int char_toupper(int); //convert to upper char if is lower
