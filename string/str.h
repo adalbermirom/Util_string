@@ -275,11 +275,12 @@ char *str_dup(const char*s){
 
 int str_rev(char*s){
 	char *dup = str_dup(s);
-	int i = str_len(s) - 1;//gets out '\0';
+	int i = str_len(s) - 1;
 	if(!dup) return 0;
 	do{
 		*s=dup[i]; --i;
 	}while( *(s++));
+	if(dup) free(dup);
 	return 1;
 }
 
