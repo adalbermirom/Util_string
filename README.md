@@ -17,12 +17,14 @@ This library has the same function names from string.h std C.
 The functions are the same as string.h str C, just see the C std library manual.
 
 (There are some other functions that I added)
-Char
+
 ### Macros
 * CHAR_TOLWR(c); // turn c to lower (if not possible c = c);
 * CHAR_TOUPR(c); //turn c to upper (if not possible c = c);
 * CHAR_ISNUMBER(n); //return 1 if n is a number '0' - '9'
 * CHAR_ISALPHA(l); //return 1 if l is 'A' - 'Z' or 'a' - 'z'
+* FAST_STRLEN(var,str);  
+ //get length of string, eg. char *s = "some string here"; size_t len; FAST_STRLEN(len,s);
 
 ### functions
 
