@@ -5,27 +5,29 @@ use:  #include "string/str.h"
 
 This library has the same function names from string.h std C.
 
-With some modification:
+With some modification
 
 'strcpy' becomes 'str_cpy', for example, and so on... (This library uses underscore in function names);
 
-Reference:
+Reference
 (string.h std C)
 The functions are the same as string.h str C, just see the C std library manual.
 
-(There are some other functions that I added:)
-Char:
-        Macros:
+(There are some other functions that I added)
+Char
+        Macros
         CHAR_TOLWR(c); // turn c to lower (if not possible c = c);
         CHAR_TOUPR(c); //turn c to upper (if not possible c = c);
         CHAR_ISNUMBER(n); //return 1 if n is a number '0' - '9'
         CHAR_ISALPHA(l); //return 1 if l is 'A' - 'Z' or 'a' - 'z'
-        functions: 
+        
+        functions
+        
         int char_tolower(int);//convert to lower char if is upper
         int char_toupper(int); //convert to upper char if is lower
         int char_isnumber(int); //return 1 if the char is a number (otherwise: 0)
         int char_isalpha(int); //return 1 if the char is A-Z or a-z  (otherwise: 0)
-String:
+String
         int str_trim(char *s);//trim white spaces around the string 's' / returns 0 or 1 if fail or sucess
         int str_find(char *a, char *b,int start,int finish); //find 'b' in 'a' at start to finish, if it is found then return
                                                              //its position (returns int);
